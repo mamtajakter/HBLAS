@@ -1,0 +1,748 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-29 02:06:19.810078 UTC
+
+interface hblas-0.0.0.0-F71I6QhmeyVEy1DCNMIf5j:HBLAS.IO.List 8022
+  interface hash: c830edffc9dd56ea5f11be264006d85a
+  ABI hash: 004c6395383c8b561bbe2474e6566a97
+  export-list hash: 4077a3e5f134685fa3eb0ec4ea4e0f54
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 89f0d5a71cd5b0871cf62fde90f7814f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HBLAS.IO.List.ccreateVecX'
+  HBLAS.IO.List.createFlatMatrix
+  HBLAS.IO.List.createSymLowSq
+  HBLAS.IO.List.createSymLowTri
+  HBLAS.IO.List.createSymSq
+  HBLAS.IO.List.createSymUpSq
+  HBLAS.IO.List.createSymUpTri
+  HBLAS.IO.List.createUnSymSq
+  HBLAS.IO.List.createVec0
+  HBLAS.IO.List.createVecX
+  HBLAS.IO.List.createVecX'
+  HBLAS.IO.List.helperSymLowSq
+  HBLAS.IO.List.helperSymLowTri
+  HBLAS.IO.List.helperSymUpSq
+  HBLAS.IO.List.helperSymUpTri
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.Monoid c0108b166e27f747671c7fe4ffb11019
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+08e7e627df2f753cf80737f3b66427d3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HBLAS.IO.List.$trModule3
+                   HBLAS.IO.List.$trModule1) -}
+32281fea6b24ea91e7d639e176371908
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.IO.List.$trModule2) -}
+3bd7f015e6161a5e47e40d37ce637d8f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HBLAS.IO.List"#) -}
+7905219261322e178d06e99809d09f8f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.IO.List.$trModule4) -}
+1497c9f2925da59c340f032fd67dbcd8
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-F71I6QhmeyVEy1DCNMIf5j"#) -}
+5cd95be987cc7e78528ffeb6e1f7a3de
+  $wccreateVecX' ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ n
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ n
+                                               (GHC.Num.fromInteger @ n w 1)
+                                               (HBLAS.IO.List.$wccreateVecX'
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+9c4b78f3e487b765a356de3bd8f49723
+  $wcreateFlatMatrix ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ n
+                                          GHC.Types.True
+                                          -> let {
+                                               z :: [n]
+                                               = HBLAS.IO.List.$wcreateFlatMatrix
+                                                   @ n
+                                                   w
+                                                   (GHC.Prim.+# ww 1#)
+                                                   ww1
+                                             } in
+                                             letrec {
+                                               go :: [n] -> [n] {- Arity: 1 -}
+                                               = \ (ds :: [n]) ->
+                                                 case ds of wild1 {
+                                                   [] -> z : y ys -> GHC.Types.: @ n y (go ys) }
+                                             } in
+                                             go (HBLAS.IO.List.$wcreateVecX @ n w 0# 1# ww1) }) -}
+5729c250aea3d5f9fbd521196ae7f6c2
+  $wcreateSymLowSq ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ [n]
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ [n]
+                                               (HBLAS.IO.List.$whelperSymLowSq @ n w 0# 1# ww ww1)
+                                               (HBLAS.IO.List.$wcreateSymLowSq
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+bb35042016032970011a96c078697acb
+  $wcreateSymLowTri ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ [n]
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ [n]
+                                               (HBLAS.IO.List.$whelperSymLowTri @ n w 0# 1# ww ww1)
+                                               (HBLAS.IO.List.$wcreateSymLowTri
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+b28cfd058c9928cfa714a9c162845888
+  $wcreateSymSq ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ [n]
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ [n]
+                                               (HBLAS.IO.List.$wcreateVecX @ n w 0# 1# ww1)
+                                               (HBLAS.IO.List.$wcreateSymSq
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+3ff1fbe3485d8cf65a3e1d0d79fba7cf
+  $wcreateSymUpSq ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ [n]
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ [n]
+                                               (HBLAS.IO.List.$whelperSymUpSq @ n w 0# 1# ww ww1)
+                                               (HBLAS.IO.List.$wcreateSymUpSq
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+c1a3afa1c79b7da2efb2233e3ffb783d
+  $wcreateSymUpTri ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ [n]
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ [n]
+                                               (letrec {
+                                                  unsafeDrop :: forall a1.
+                                                                GHC.Types.Int -> [a1] -> [a1]
+                                                    {- Arity: 2 -}
+                                                  = \ @ a1 (ds :: GHC.Types.Int) (ds1 :: [a1]) ->
+                                                    case ds of ds2 { GHC.Types.I# ipv ->
+                                                    case ds1 of wild1 {
+                                                      [] -> GHC.Types.[] @ a1
+                                                      : ipv1 ipv2
+                                                      -> case ipv of ds3 {
+                                                           DEFAULT
+                                                           -> unsafeDrop
+                                                                @ a1
+                                                                (GHC.Types.I# (GHC.Prim.-# ds3 1#))
+                                                                ipv2
+                                                           1# -> ipv2 } } }
+                                                } in
+                                                case GHC.Prim.tagToEnum#
+                                                       @ GHC.Types.Bool
+                                                       (GHC.Prim.<=# ww 0#) of wild1 {
+                                                  GHC.Types.False
+                                                  -> unsafeDrop
+                                                       @ n
+                                                       (GHC.Types.I# ww)
+                                                       (HBLAS.IO.List.$whelperSymUpTri
+                                                          @ n
+                                                          w
+                                                          0#
+                                                          1#
+                                                          ww
+                                                          ww1)
+                                                  GHC.Types.True
+                                                  -> HBLAS.IO.List.$whelperSymUpTri
+                                                       @ n
+                                                       w
+                                                       0#
+                                                       1#
+                                                       ww
+                                                       ww1 })
+                                               (HBLAS.IO.List.$wcreateSymUpTri
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+75d8b600a1b470ff7a255d58f990add5
+  $wcreateUnSymSq ::
+    GHC.Num.Num n => GHC.Prim.Int# -> GHC.Prim.Int# -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww1) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ [n]
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ [n]
+                                               (HBLAS.IO.List.$wcreateVecX @ n w 0# 1# ww1)
+                                               (HBLAS.IO.List.$wcreateUnSymSq
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  ww1) }) -}
+c4f8b6896c5d041e5bb8bb7c5346811a
+  $wcreateVecX ::
+    GHC.Num.Num n =>
+    GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><L,U><S,U>, Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#)
+                                          (ww2 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww2) of wild {
+                                          GHC.Types.False -> GHC.Types.[] @ n
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ n
+                                               (GHC.Num.fromInteger @ n w 1)
+                                               (HBLAS.IO.List.$wcreateVecX
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  (GHC.Prim.+# ww1 1#)
+                                                  ww2) }) -}
+5da4c5e64e575d5a3ab936f2487558b6
+  $whelperSymLowSq ::
+    GHC.Num.Num n =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#)
+                                          (ww2 :: GHC.Prim.Int#)
+                                          (ww3 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<=# ww ww2) of wild {
+                                          GHC.Types.False
+                                          -> case GHC.Prim.tagToEnum#
+                                                    @ GHC.Types.Bool
+                                                    (GHC.Prim.<# ww ww3) of wild1 {
+                                               GHC.Types.False -> GHC.Types.[] @ n
+                                               GHC.Types.True
+                                               -> GHC.Types.:
+                                                    @ n
+                                                    (GHC.Num.fromInteger @ n w 0)
+                                                    (HBLAS.IO.List.$whelperSymLowSq
+                                                       @ n
+                                                       w
+                                                       (GHC.Prim.+# ww 1#)
+                                                       (GHC.Prim.+# ww1 1#)
+                                                       ww2
+                                                       ww3) }
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ n
+                                               (GHC.Num.fromInteger @ n w 1)
+                                               (HBLAS.IO.List.$whelperSymLowSq
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  (GHC.Prim.+# ww1 1#)
+                                                  ww2
+                                                  ww3) }) -}
+7862e925c5adac257f6d5517bdd14304
+  $whelperSymLowTri ::
+    GHC.Num.Num n =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#)
+                                          (ww2 :: GHC.Prim.Int#)
+                                          (ww3 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<=# ww ww2) of wild {
+                                          GHC.Types.False
+                                          -> case GHC.Prim.tagToEnum#
+                                                    @ GHC.Types.Bool
+                                                    (GHC.Prim.<# ww ww3) of wild1 {
+                                               GHC.Types.False -> GHC.Types.[] @ n
+                                               GHC.Types.True
+                                               -> GHC.Types.:
+                                                    @ n
+                                                    (GHC.Num.fromInteger @ n w 0)
+                                                    (HBLAS.IO.List.$whelperSymLowTri
+                                                       @ n
+                                                       w
+                                                       (GHC.Prim.+# ww 1#)
+                                                       (GHC.Prim.+# ww1 1#)
+                                                       ww2
+                                                       ww3) }
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ n
+                                               (GHC.Num.fromInteger @ n w 1)
+                                               (HBLAS.IO.List.$whelperSymLowTri
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  (GHC.Prim.+# ww1 1#)
+                                                  ww2
+                                                  ww3) }) -}
+54a71fc3ca92db780c9e80892bf07d74
+  $whelperSymUpSq ::
+    GHC.Num.Num n =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#)
+                                          (ww2 :: GHC.Prim.Int#)
+                                          (ww3 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww2) of wild {
+                                          GHC.Types.False
+                                          -> case GHC.Prim.tagToEnum#
+                                                    @ GHC.Types.Bool
+                                                    (GHC.Prim.<# ww ww3) of wild1 {
+                                               GHC.Types.False -> GHC.Types.[] @ n
+                                               GHC.Types.True
+                                               -> GHC.Types.:
+                                                    @ n
+                                                    (GHC.Num.fromInteger @ n w 1)
+                                                    (HBLAS.IO.List.$whelperSymUpSq
+                                                       @ n
+                                                       w
+                                                       (GHC.Prim.+# ww 1#)
+                                                       (GHC.Prim.+# ww1 1#)
+                                                       ww2
+                                                       ww3) }
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ n
+                                               (GHC.Num.fromInteger @ n w 0)
+                                               (HBLAS.IO.List.$whelperSymUpSq
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  (GHC.Prim.+# ww1 1#)
+                                                  ww2
+                                                  ww3) }) -}
+c88029971aa3ae8bc5fd3c795bcb1e71
+  $whelperSymUpTri ::
+    GHC.Num.Num n =>
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Prim.Int# -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,U><L,U><S,U><L,U>,
+     Inline: [0],
+     Unfolding(loop-breaker): <stable> (\ @ n
+                                          (w :: GHC.Num.Num n)
+                                          (ww :: GHC.Prim.Int#)
+                                          (ww1 :: GHC.Prim.Int#)
+                                          (ww2 :: GHC.Prim.Int#)
+                                          (ww3 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.<# ww ww2) of wild {
+                                          GHC.Types.False
+                                          -> case GHC.Prim.tagToEnum#
+                                                    @ GHC.Types.Bool
+                                                    (GHC.Prim.<# ww ww3) of wild1 {
+                                               GHC.Types.False -> GHC.Types.[] @ n
+                                               GHC.Types.True
+                                               -> GHC.Types.:
+                                                    @ n
+                                                    (GHC.Num.fromInteger @ n w 1)
+                                                    (HBLAS.IO.List.$whelperSymUpTri
+                                                       @ n
+                                                       w
+                                                       (GHC.Prim.+# ww 1#)
+                                                       (GHC.Prim.+# ww1 1#)
+                                                       ww2
+                                                       ww3) }
+                                          GHC.Types.True
+                                          -> GHC.Types.:
+                                               @ n
+                                               (GHC.Num.fromInteger @ n w 0)
+                                               (HBLAS.IO.List.$whelperSymUpTri
+                                                  @ n
+                                                  w
+                                                  (GHC.Prim.+# ww 1#)
+                                                  (GHC.Prim.+# ww1 1#)
+                                                  ww2
+                                                  ww3) }) -}
+5da262f1d4e2048b5b7f7a0414ce9eb5
+  ccreateVecX' ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wccreateVecX' @ n w ww1 ww3 } }) -}
+17e24de2bb425f43ed579cd7225047d8
+  createFlatMatrix ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateFlatMatrix @ n w ww1 ww3 } }) -}
+0f2b418deb2f021bb3831313af13b289
+  createSymLowSq ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateSymLowSq @ n w ww1 ww3 } }) -}
+eee734c6b3e069d35e3373b89de8e6ac
+  createSymLowTri ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateSymLowTri @ n w ww1 ww3 } }) -}
+2d3007b83313ddf63e7d6ce2a2feaed4
+  createSymSq ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateSymSq @ n w ww1 ww3 } }) -}
+9dfa62793c0a47d783b59aeb3cc6cf0b
+  createSymUpSq ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateSymUpSq @ n w ww1 ww3 } }) -}
+3c0537ec9b52f225678ccc1dbf99844e
+  createSymUpTri ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateSymUpTri @ n w ww1 ww3 } }) -}
+9ea6733f25c9a321d728ffd6337c98a4
+  createUnSymSq ::
+    GHC.Num.Num n => GHC.Types.Int -> GHC.Types.Int -> [[n]]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 HBLAS.IO.List.$wcreateUnSymSq @ n w ww1 ww3 } }) -}
+ce2fcc1cc8847c55c5d191f03414a70c
+  createVec0 :: GHC.Num.Num n => GHC.Types.Int -> [n]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))><S(S),1*U(U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) (n1 :: GHC.Types.Int) ->
+                 case n1 of n2 { GHC.Types.I# ipv ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b (c :: n -> b -> b)[OneShot] (nil :: b)[OneShot] ->
+                    case GHC.Classes.ltInt (GHC.Types.I# 0#) n2 of wild {
+                      GHC.Types.False -> nil
+                      GHC.Types.True
+                      -> GHC.List.repeatFB
+                           @ n
+                           @ (GHC.Types.Int -> b)
+                           (GHC.List.takeFB @ n @ b c nil)
+                           (GHC.Num.fromInteger @ n $dNum 0)
+                           n2 }) }) -}
+43e03eaaf0662bd3ee44d1f4651ec632
+  createVecX ::
+    GHC.Num.Num n =>
+    GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 case w3 of ww4 { GHC.Types.I# ww5 ->
+                 HBLAS.IO.List.$wcreateVecX @ n w ww1 ww3 ww5 } } }) -}
+a521c59c14c207c9b1ab64fe5990c9b3
+  createVecX' :: GHC.Num.Num n => GHC.Types.Int -> [n]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))><S(S),1*U(U)>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) (n1 :: GHC.Types.Int) ->
+                 case n1 of n2 { GHC.Types.I# ipv ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b (c :: n -> b -> b)[OneShot] (nil :: b)[OneShot] ->
+                    case GHC.Classes.ltInt (GHC.Types.I# 0#) n2 of wild {
+                      GHC.Types.False -> nil
+                      GHC.Types.True
+                      -> GHC.List.repeatFB
+                           @ n
+                           @ (GHC.Types.Int -> b)
+                           (GHC.List.takeFB @ n @ b c nil)
+                           (GHC.Num.fromInteger @ n $dNum 1)
+                           n2 }) }) -}
+ef24fb81ce03f411ad362d3001fb44ce
+  helperSymLowSq ::
+    GHC.Num.Num n =>
+    GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 case w3 of ww4 { GHC.Types.I# ww5 ->
+                 case w4 of ww6 { GHC.Types.I# ww7 ->
+                 HBLAS.IO.List.$whelperSymLowSq @ n w ww1 ww3 ww5 ww7 } } } }) -}
+0af5350f03fb3e8107eae1f20325a8ba
+  helperSymLowTri ::
+    GHC.Num.Num n =>
+    GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 case w3 of ww4 { GHC.Types.I# ww5 ->
+                 case w4 of ww6 { GHC.Types.I# ww7 ->
+                 HBLAS.IO.List.$whelperSymLowTri @ n w ww1 ww3 ww5 ww7 } } } }) -}
+28eccd1c422f520c1f930be4b3d9ab74
+  helperSymUpSq ::
+    GHC.Num.Num n =>
+    GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 case w3 of ww4 { GHC.Types.I# ww5 ->
+                 case w4 of ww6 { GHC.Types.I# ww7 ->
+                 HBLAS.IO.List.$whelperSymUpSq @ n w ww1 ww3 ww5 ww7 } } } }) -}
+0ce0ed608884dc65a5b3721661c86dc0
+  helperSymUpTri ::
+    GHC.Num.Num n =>
+    GHC.Types.Int
+    -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ n
+                   (w :: GHC.Num.Num n)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: GHC.Types.Int)
+                   (w4 :: GHC.Types.Int) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case w2 of ww2 { GHC.Types.I# ww3 ->
+                 case w3 of ww4 { GHC.Types.I# ww5 ->
+                 case w4 of ww6 { GHC.Types.I# ww7 ->
+                 HBLAS.IO.List.$whelperSymUpTri @ n w ww1 ww3 ww5 ww7 } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

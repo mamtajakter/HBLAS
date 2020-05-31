@@ -1,0 +1,565 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-29 02:06:22.782972 UTC
+
+interface hblas-0.0.0.0-F71I6QhmeyVEy1DCNMIf5j:HBLAS.Level1 8022
+  interface hash: 783270c129f23239a5b532d518bb8d09
+  ABI hash: bde81cafc81f9682234ab53ab9dc7311
+  export-list hash: 18b18fcb432d07a00a66ac1850e8668d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 2804918ffae816c69890ef0538da0f0c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HBLAS.Level1.asum
+  HBLAS.Level1.axpy
+  HBLAS.Level1.axpy'
+  HBLAS.Level1.axpyaxpy
+  HBLAS.Level1.axpyaxpy'
+  HBLAS.Level1.copy
+  HBLAS.Level1.dot
+  HBLAS.Level1.idamax
+  HBLAS.Level1.idamin
+  HBLAS.Level1.nrm2
+  HBLAS.Level1.rot
+  HBLAS.Level1.scal
+  HBLAS.Level1.swap
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.Monoid c0108b166e27f747671c7fe4ffb11019
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Float 28e3bf9e258278ac8084e9cab43fd542
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+addDependentFile "/Users/mamtajakter/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+2eeb708e44e6c4a7af869d9993e9e008
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HBLAS.Level1.$trModule3
+                   HBLAS.Level1.$trModule1) -}
+c44253ee5427dc112e586e8776da3f23
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Level1.$trModule2) -}
+c371dde1ef740894add33616a3ad86a8
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HBLAS.Level1"#) -}
+e23c6a87076d249ec94fd9fd40d09c55
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HBLAS.Level1.$trModule4) -}
+a4c389d24fde62519a28ea844402d2c0
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hblas-0.0.0.0-F71I6QhmeyVEy1DCNMIf5j"#) -}
+7453a0fd492f8ba5c6e04a5ce4878606
+  $wrot ::
+    (GHC.Float.Floating n, GHC.Classes.Eq n) =>
+    [n] -> [n] -> n -> (# [n], [n] #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(1*U(1*U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,1*C1(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ n
+                   (w :: GHC.Float.Floating n)
+                   (w1 :: GHC.Classes.Eq n)
+                   (w2 :: [n])
+                   (w3 :: [n])
+                   (w4 :: n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n = GHC.Float.$p1Floating @ n w
+                 } in
+                 let {
+                   $dNum :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 case GHC.Classes.==
+                        @ n
+                        w1
+                        w4
+                        (GHC.Num.fromInteger @ n $dNum HBLAS.Level1.rot2) of wild {
+                   GHC.Types.False
+                   -> let {
+                        s :: n
+                        = GHC.Num.*
+                            @ n
+                            $dNum
+                            (GHC.Float.sqrt
+                               @ n
+                               w
+                               (GHC.Num.fromInteger @ n $dNum HBLAS.Level1.rot1))
+                            w4
+                      } in
+                      (# GHC.List.zipWith
+                           @ n
+                           @ n
+                           @ n
+                           (\ (w5 :: n) (z :: n)[OneShot] ->
+                            GHC.Num.+
+                              @ n
+                              $dNum
+                              (GHC.Num.* @ n $dNum w4 w5)
+                              (GHC.Num.* @ n $dNum s z))
+                           w2
+                           w3,
+                         GHC.List.zipWith
+                           @ n
+                           @ n
+                           @ n
+                           (\ (w5 :: n) (z :: n)[OneShot] ->
+                            GHC.Num.-
+                              @ n
+                              $dNum
+                              (GHC.Num.* @ n $dNum w4 z)
+                              (GHC.Num.* @ n $dNum s w5))
+                           w2
+                           w3 #)
+                   GHC.Types.True -> (# w2, w3 #) }) -}
+2fe87c3aff9877d6791edd11769e21ac
+  asum :: GHC.Num.Num n => [n] -> n
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(C(C1(U)),A,A,A,C(U),A,1*C1(U))><S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) (y :: [n]) ->
+                 case y of y1 { DEFAULT ->
+                 GHC.Base.foldr
+                   @ n
+                   @ (n -> n)
+                   (\ (ds :: n) (ds1 :: n -> n)[OneShot] (v :: n)[OneShot] ->
+                    case v of z { DEFAULT ->
+                    ds1 (GHC.Num.+ @ n $dNum (GHC.Num.abs @ n $dNum z) ds) })
+                   (GHC.Base.id @ n)
+                   y1
+                   (GHC.Num.fromInteger @ n $dNum 0) }) -}
+c238bfaef0a1ed6ce50f74c9a7fd7423
+  axpy :: GHC.Num.Num n => n -> [n] -> [n] -> [n]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><S,1*U><S,1*U><S,1*U>,
+     Inline: (sat-args=3),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (alpha :: n)
+                   (xs :: [n])
+                   (ys :: [n]) ->
+                 case alpha of alpha1 { DEFAULT ->
+                 case xs of xs1 { DEFAULT ->
+                 case ys of ys1 { DEFAULT ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b1 (c1 :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                    GHC.List.foldr2
+                      @ n
+                      @ n
+                      @ b1
+                      (GHC.List.zipWithFB
+                         @ n
+                         @ b1
+                         @ b1
+                         @ n
+                         @ n
+                         c1
+                         (\ (x :: n) (y :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum y (GHC.Num.* @ n $dNum alpha1 x)))
+                      n1
+                      xs1
+                      ys1) } } }) -}
+d1d01a41c92a882700eb3966f86aab67
+  axpy' :: GHC.Num.Num n => n -> [n] -> [n] -> [n] -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(LLLLLLC(S)),U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U))><S,1*U><S,1*U><S,1*U><S,1*U>,
+     Inline: (sat-args=4),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (alpha :: n)
+                   (x :: [n])
+                   (y :: [n])
+                   (vec0 :: [n]) ->
+                 case alpha of alpha1 { DEFAULT ->
+                 case x of x1 { DEFAULT ->
+                 case y of y1 { DEFAULT ->
+                 case vec0 of vec1 { DEFAULT ->
+                 case GHC.Num.fromInteger @ n $dNum 1 of alpha2 { DEFAULT ->
+                 case GHC.Base.build
+                        @ n
+                        (\ @ b1 (c1 :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                         GHC.List.foldr2
+                           @ n
+                           @ n
+                           @ b1
+                           (GHC.List.zipWithFB
+                              @ n
+                              @ b1
+                              @ b1
+                              @ n
+                              @ n
+                              c1
+                              (\ (x2 :: n) (y2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum y2 (GHC.Num.* @ n $dNum alpha1 x2)))
+                           n1
+                           x1
+                           vec1) of xs { DEFAULT ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b1 (c1 :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                    GHC.List.foldr2
+                      @ n
+                      @ n
+                      @ b1
+                      (GHC.List.zipWithFB
+                         @ n
+                         @ b1
+                         @ b1
+                         @ n
+                         @ n
+                         c1
+                         (\ (x2 :: n) (y2 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum y2 (GHC.Num.* @ n $dNum alpha2 x2)))
+                      n1
+                      xs
+                      y1) } } } } } }) -}
+8399c8fc135dc8fd5f27572f5f70c5a0
+  axpyaxpy :: GHC.Num.Num n => n -> n -> [n] -> [n] -> [n]
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><S,1*U><S,1*U><S,U><S,1*U>,
+     Inline: (sat-args=4),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (a1 :: n)
+                   (a2 :: n)
+                   (x :: [n])
+                   (y :: [n]) ->
+                 case a1 of a4 { DEFAULT ->
+                 case a2 of a5 { DEFAULT ->
+                 case x of x1 { DEFAULT ->
+                 case y of y1 { DEFAULT ->
+                 case GHC.Base.build
+                        @ n
+                        (\ @ b1 (c1 :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                         GHC.List.foldr2
+                           @ n
+                           @ n
+                           @ b1
+                           (GHC.List.zipWithFB
+                              @ n
+                              @ b1
+                              @ b1
+                              @ n
+                              @ n
+                              c1
+                              (\ (x2 :: n) (y2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum y2 (GHC.Num.* @ n $dNum a4 x2)))
+                           n1
+                           x1
+                           y1) of t1 { DEFAULT ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b1 (c1 :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                    GHC.List.foldr2
+                      @ n
+                      @ n
+                      @ b1
+                      (GHC.List.zipWithFB
+                         @ n
+                         @ b1
+                         @ b1
+                         @ n
+                         @ n
+                         c1
+                         (\ (x2 :: n) (y2 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum y2 (GHC.Num.* @ n $dNum a5 x2)))
+                      n1
+                      t1
+                      x1) } } } } }) -}
+3ea321611bd101bd2dfc3176c0d9deff
+  axpyaxpy' :: GHC.Num.Num n => n -> n -> [n] -> [n] -> [n] -> [n]
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,A)><S,1*U><S,1*U><S,1*U><S,1*U><S,1*U>,
+     Inline: (sat-args=5),
+     Unfolding: InlineRule (6, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   (a :: n)
+                   (b :: n)
+                   (x :: [n])
+                   (y :: [n])
+                   (z :: [n]) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 case x of x1 { DEFAULT ->
+                 case y of y1 { DEFAULT ->
+                 case z of z1 { DEFAULT ->
+                 case GHC.Base.build
+                        @ n
+                        (\ @ b2 (c1 :: n -> b2 -> b2)[OneShot] (n1 :: b2)[OneShot] ->
+                         GHC.List.foldr2
+                           @ n
+                           @ n
+                           @ b2
+                           (GHC.List.zipWithFB
+                              @ n
+                              @ b2
+                              @ b2
+                              @ n
+                              @ n
+                              c1
+                              (\ (x2 :: n) (y2 :: n)[OneShot] ->
+                               GHC.Num.+ @ n $dNum y2 (GHC.Num.* @ n $dNum a1 x2)))
+                           n1
+                           x1
+                           y1) of t { DEFAULT ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b2 (c1 :: n -> b2 -> b2)[OneShot] (n1 :: b2)[OneShot] ->
+                    GHC.List.foldr2
+                      @ n
+                      @ n
+                      @ b2
+                      (GHC.List.zipWithFB
+                         @ n
+                         @ b2
+                         @ b2
+                         @ n
+                         @ n
+                         c1
+                         (\ (x2 :: n) (y2 :: n)[OneShot] ->
+                          GHC.Num.+ @ n $dNum y2 (GHC.Num.* @ n $dNum b1 x2)))
+                      n1
+                      t
+                      z1) } } } } } }) -}
+1a63229af36fcd0913ab3e6a9c5c47fc
+  copy :: (GHC.Classes.Eq n, GHC.Num.Num n) => [n] -> [n] -> [n]
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><S,1*U><L,A>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (4, False, True)
+                (\ @ n
+                   ($dEq :: GHC.Classes.Eq n)
+                   ($dNum :: GHC.Num.Num n)
+                   (xs :: [n])
+                   (ds :: [n]) ->
+                 xs) -}
+423b5942938bcf421ec88d8fdb822038
+  dot :: GHC.Num.Num n => [n] -> [n] -> n
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U))><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) (a :: [n]) (b :: [n]) ->
+                 case a of a1 { DEFAULT ->
+                 case b of b1 { DEFAULT ->
+                 let {
+                   k :: n -> n -> n = GHC.Num.+ @ n $dNum
+                 } in
+                 GHC.List.foldr2
+                   @ n
+                   @ n
+                   @ (n -> n)
+                   (GHC.List.zipWithFB
+                      @ n
+                      @ (n -> n)
+                      @ (n -> n)
+                      @ n
+                      @ n
+                      (\ (ds :: n) (ds1 :: n -> n)[OneShot] (v :: n)[OneShot] ->
+                       ds1 (k v ds))
+                      (GHC.Num.* @ n $dNum))
+                   (GHC.Base.id @ n)
+                   a1
+                   b1
+                   (GHC.Num.fromInteger @ n $dNum 0) } }) -}
+f98907eb75bfcfdb84da90334ffe413e
+  idamax ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    [n] -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(1*U(1*C1(C(U)),A),A,A,A,A,A,C(C1(U)),A)><S,U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) ($dOrd :: GHC.Classes.Ord n) ->
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: [n]) ->
+                 case a of a1 { DEFAULT ->
+                 Data.OldList.findIndex
+                   @ n
+                   (GHC.Classes.==
+                      @ n
+                      $dEq
+                      (GHC.List.maximum
+                         @ n
+                         $dOrd
+                         (GHC.Base.build
+                            @ n
+                            (\ @ b1 (c :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                             GHC.Base.foldr
+                               @ n
+                               @ b1
+                               (GHC.Base.mapFB @ n @ b1 @ n c (GHC.Num.abs @ n $dNum))
+                               n1
+                               a1))))
+                   (GHC.Base.build
+                      @ n
+                      (\ @ b1 (c :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ n
+                         @ b1
+                         (GHC.Base.mapFB @ n @ b1 @ n c (GHC.Num.abs @ n $dNum))
+                         n1
+                         a1)) }) -}
+982112291d3b004fae0be56f76e17be7
+  idamin ::
+    (GHC.Num.Num n, GHC.Classes.Ord n) =>
+    [n] -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,C(U),A,A)><L,U(1*U(1*C1(C(U)),A),A,A,A,A,A,A,C(C1(U)))><S,U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) ($dOrd :: GHC.Classes.Ord n) ->
+                 let {
+                   $dEq :: GHC.Classes.Eq n = GHC.Classes.$p1Ord @ n $dOrd
+                 } in
+                 \ (a :: [n]) ->
+                 case a of a1 { DEFAULT ->
+                 Data.OldList.findIndex
+                   @ n
+                   (GHC.Classes.==
+                      @ n
+                      $dEq
+                      (GHC.List.minimum
+                         @ n
+                         $dOrd
+                         (GHC.Base.build
+                            @ n
+                            (\ @ b1 (c :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                             GHC.Base.foldr
+                               @ n
+                               @ b1
+                               (GHC.Base.mapFB @ n @ b1 @ n c (GHC.Num.abs @ n $dNum))
+                               n1
+                               a1))))
+                   (GHC.Base.build
+                      @ n
+                      (\ @ b1 (c :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ n
+                         @ b1
+                         (GHC.Base.mapFB @ n @ b1 @ n c (GHC.Num.abs @ n $dNum))
+                         n1
+                         a1)) }) -}
+6e14eb81832da2fb7b636d6e72ff5261
+  nrm2 :: (GHC.Num.Num n, GHC.Float.Floating n) => [n] -> n
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,A><L,U(1*U(1*U(C(C1(U)),A,C(C1(U)),A,A,A,1*C1(U)),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ n
+                   ($dNum :: GHC.Num.Num n)
+                   ($dFloating :: GHC.Float.Floating n) ->
+                 let {
+                   $dFractional :: GHC.Real.Fractional n
+                   = GHC.Float.$p1Floating @ n $dFloating
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num n = GHC.Real.$p1Fractional @ n $dFractional
+                 } in
+                 let {
+                   f :: n -> n = GHC.Float.sqrt @ n $dFloating
+                 } in
+                 let {
+                   f1 :: n -> n -> n = GHC.Num.+ @ n $dNum1
+                 } in
+                 let {
+                   f2 :: n = GHC.Num.fromInteger @ n $dNum1 0
+                 } in
+                 let {
+                   g :: n -> n {- Arity: 1 -} = \ (i :: n) -> GHC.Num.* @ n $dNum1 i i
+                 } in
+                 \ (x :: [n]) ->
+                 f (GHC.Base.foldr
+                      @ n
+                      @ (n -> n)
+                      (GHC.Base.mapFB
+                         @ n
+                         @ (n -> n)
+                         @ n
+                         (\ (ds :: n) (ds1 :: n -> n)[OneShot] (v :: n)[OneShot] ->
+                          ds1 (f1 v ds))
+                         g)
+                      (GHC.Base.id @ n)
+                      x
+                      f2)) -}
+6a55ce9741f987e5ce3b9aee78f01701
+  rot ::
+    (GHC.Float.Floating n, GHC.Classes.Eq n, GHC.Num.Num n) =>
+    [n] -> [n] -> n -> ([n], [n])
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,U(U(U(C(C1(U)),C(C1(U)),C(C1(U)),A,A,A,C(U)),A,A,A),A,A,A,C(U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,A><L,U><L,U><L,U>m,
+     Inline: [0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ n
+                   (w :: GHC.Float.Floating n)
+                   (w1 :: GHC.Classes.Eq n)
+                   (w2 :: GHC.Num.Num n)
+                   (w3 :: [n])
+                   (w4 :: [n])
+                   (w5 :: n) ->
+                 case HBLAS.Level1.$wrot @ n w w1 w3 w4 w5 of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+101ff704ab68ac7d8249e593fb9edd87
+  rot1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+e3a70e97d9219f780ce386b4c0149868
+  rot2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+b1b71ab39a7cc31981179a696c3d53fd
+  scal :: GHC.Num.Num n => n -> [n] -> [n]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,1*C1(C(U)),A,A,A,A)><S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ n ($dNum :: GHC.Num.Num n) (alpha :: n) (x :: [n]) ->
+                 case alpha of alpha1 { DEFAULT ->
+                 case x of x1 { DEFAULT ->
+                 GHC.Base.build
+                   @ n
+                   (\ @ b1 (c :: n -> b1 -> b1)[OneShot] (n1 :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ n
+                      @ b1
+                      (GHC.Base.mapFB @ n @ b1 @ n c (GHC.Num.* @ n $dNum alpha1))
+                      n1
+                      x1) } }) -}
+4b32c12555640ef064a4a6bac28eaab7
+  swap :: (a, b) -> (b, a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a @ b (ds :: (a, b)) ->
+                 case ds of wild { (,) x y -> (y, x) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
